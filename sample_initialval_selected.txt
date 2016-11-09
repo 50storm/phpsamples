@@ -1,0 +1,8 @@
+/*view*/
+echo $this->Form->input('birthday',array('dateFormat'=>'Y',
+'monthNames' => false,'separator' => '/','empty'=>'選択して', 
+'options'=>$key_val, 'selected'=>$sel_val));
+
+/*controller*/
+$sel_val=11;
+$this->set('sel_val', $sel_val);
